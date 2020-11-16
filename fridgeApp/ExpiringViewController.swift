@@ -16,8 +16,7 @@ class ExpiringViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        expiringTable.dataSource = self
-        //expiringTable.delegate = self
+
         
         let retrieveData = UserDefaults.standard.data(forKey: "items")
         
