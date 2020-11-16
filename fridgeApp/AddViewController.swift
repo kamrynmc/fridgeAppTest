@@ -23,6 +23,8 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         items = try! JSONDecoder().decode([Item].self, from: retrieveData!)
         // Do any additional setup after loading the view.
       
+        name.delegate = self
+        quantity.delegate = self
         
     }
     
