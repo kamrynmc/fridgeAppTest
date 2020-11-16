@@ -25,10 +25,10 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="600" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tt-sI-vON">
+                                    <button opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="600" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tt-sI-vON">
                                         <rect key="frame" x="0.0" y="50" width="374" height="656"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" image="fridgeBig.png"/>
+                                        <state key="normal" image="fridgeBigger"/>
                                         <connections>
                                             <segue destination="tzZ-DY-Wt2" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Bg6-dp-SA0"/>
                                         </connections>
@@ -358,7 +358,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fridgeBig.png" width="283" height="611"/>
+        <image name="fridgeBigger" width="838" height="1808"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
