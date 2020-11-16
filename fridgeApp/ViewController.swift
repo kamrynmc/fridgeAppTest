@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             items = try! JSONDecoder().decode([Item].self, from: retrieveData!)
         }
         
-        print(items)
+        //print(items)
    
     }
 
