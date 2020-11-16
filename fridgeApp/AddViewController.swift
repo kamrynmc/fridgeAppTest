@@ -28,9 +28,15 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    @IBAction func dateChanged(_ sender: UIDatePicker) {
-        //to get date
-        //date.date
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if (name.text!.count >= 1 && quantity.text!.count >= 1) {
+            add.isEnabled = true
+        }
+        else  {
+            add.isEnabled = false
+        }
+        return true
     }
     
     @IBAction func add(_ sender: Any) {
