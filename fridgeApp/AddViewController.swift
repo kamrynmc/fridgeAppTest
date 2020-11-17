@@ -46,6 +46,9 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         let data = try! JSONEncoder().encode(items)
         
         UserDefaults.standard.setValue(data, forKey: "items")
+        name.text = ""
+        quantity.text = ""
+        add.isEnabled = false
     }
     /*
     // MARK: - Navigation
