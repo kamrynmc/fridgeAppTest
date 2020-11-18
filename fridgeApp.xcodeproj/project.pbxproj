@@ -20,6 +20,8 @@
 		29BBAEA3255A350D0071D270 /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBAEA2255A350D0071D270 /* FridgeViewController.swift */; };
 		29BBAEA8255A35190071D270 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBAEA7255A35190071D270 /* AddViewController.swift */; };
 		29BBAEAD255A35250071D270 /* ExpiringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BBAEAC255A35250071D270 /* ExpiringViewController.swift */; };
+		29CC8E7A2564B22C0099C806 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC8E792564B22C0099C806 /* RecipesViewController.swift */; };
+		29CC8E7F2564B7340099C806 /* OneRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC8E7E2564B7340099C806 /* OneRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		29BBAEA2255A350D0071D270 /* FridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
 		29BBAEA7255A35190071D270 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		29BBAEAC255A35250071D270 /* ExpiringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringViewController.swift; sourceTree = "<group>"; };
+		29CC8E792564B22C0099C806 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		29CC8E7E2564B7340099C806 /* OneRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				29BBAEA7255A35190071D270 /* AddViewController.swift */,
 				29BBAEA2255A350D0071D270 /* FridgeViewController.swift */,
 				29BBAE5E2559D3260071D270 /* Main.storyboard */,
+				29CC8E7E2564B7340099C806 /* OneRecipeViewController.swift */,
+				29CC8E792564B22C0099C806 /* RecipesViewController.swift */,
 				29BBAE612559D3270071D270 /* Assets.xcassets */,
 				29BBAE9D255A15430071D270 /* fridgeBig.png */,
 				29BBAE98255A14A50071D270 /* fridge with open.jpg */,
@@ -276,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BBAEA8255A35190071D270 /* AddViewController.swift in Sources */,
+				29CC8E7F2564B7340099C806 /* OneRecipeViewController.swift in Sources */,
+				29CC8E7A2564B22C0099C806 /* RecipesViewController.swift in Sources */,
 				29BBAE5D2559D3260071D270 /* ViewController.swift in Sources */,
 				29BBAEA3255A350D0071D270 /* FridgeViewController.swift in Sources */,
 				29BBAE592559D3260071D270 /* AppDelegate.swift in Sources */,
