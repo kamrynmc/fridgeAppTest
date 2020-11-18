@@ -29,15 +29,24 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if (name.text!.count >= 1 && quantity.text!.count >= 1) {
-            add.isEnabled = true
-        }
-        else  {
-            add.isEnabled = false
-        }
-        return true
+    @IBAction func checkEdit(_ sender: Any) {
+        validate()
     }
+    
+    @IBAction func checkEditquantity(_ sender: Any) {
+        validate()
+    }
+    
+    
+    func validate() {
+            if (name.text!.count >= 1 && quantity.text!.count >= 1) {
+                add.isEnabled = true
+            }
+            else  {
+                add.isEnabled = false
+            }
+    }
+    
     
     @IBAction func add(_ sender: Any) {
         let item = Item(name: name.text!, quantity: quantity.text!, date: date.date)
@@ -50,6 +59,13 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         quantity.text = ""
         add.isEnabled = false
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //close
+        textField.resignFirstResponder()
+        return true
+    }
+    
     /*
     // MARK: - Navigation
 

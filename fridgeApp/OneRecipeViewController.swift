@@ -13,17 +13,31 @@ class OneRecipeViewController: UIViewController {
     @IBOutlet weak var ingredientLabel: UILabel!
     @IBOutlet weak var recipeTitle: UILabel!
     
-    var recipes = ["pasta", "chicken"]
-    var ingredients = ["pasta ingredients", "chicken ingredients"]
+    var recipes = [Recipe]()
     var getName = String()
+    var getRow = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createArray()
         // Do any additional setup after loading the view.
-        recipeImage.image = UIImage(named: getName)
-        recipeTitle.text = getName
-        ingredientLabel.text = getName
+        recipeImage.image = recipes[getRow].image
+        recipeTitle.text = recipes[getRow].name
+        ingredientLabel.text = recipes[getRow].ingredients
     }
+    
+    
+    func createArray() {
+        let recipe1 = Recipe(name: "pasta", image: UIImage(named: "pasta")!, ingredients: "pasta ingredients\n-pasta\n-tomatoes\n-tomato sauce\n-frozen peas")
+        let recipe2 = Recipe(name: "chicken", image: UIImage(named: "chicken")!, ingredients: "chicken ingredients\n-chicken\n-teryaki sauce\n-mushrooms")
+        let recipe3 = Recipe(name: "salad", image: UIImage(named: "salad")!, ingredients: "salad ingredients\n-spinach\n-tomatoes\n-cucumbbers\n-olive oil\n-carrots")
+        let recipe4 = Recipe(name: "omlette", image: UIImage(named: "omlette")!, ingredients: "omlette ingredients\n-eggs\n-spinach\n-mushrooms\n-milk\n-bell peppers")
+        recipes.append(recipe1)
+        recipes.append(recipe2)
+        recipes.append(recipe3)
+        recipes.append(recipe4)
+    }
+    
     
     
     
